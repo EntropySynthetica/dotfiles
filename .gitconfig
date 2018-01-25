@@ -1,0 +1,14 @@
+[core]
+	editor = vim
+[user]
+	name = Erica Zavaleta
+	email = micfeedbak@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	grep = auto
+	interative = auto
+	showbranch = auto
+	status = auto
+	ui = auto
+
