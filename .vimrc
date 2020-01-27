@@ -25,5 +25,7 @@ highlight ColorColumn ctermbg=233
 "pip install powerline-status
 set rtp+=$HOME/.local/lib/python3.6/site-packages/powerline/bindings/vim/
 
+
+
 " Always show statusline
 set laststatus=2
