@@ -126,5 +126,10 @@ fi
 alias weather='curl -4 http://wttr.in/Fargo'
 alias moon='curl -4 http://wttr.in/Moon'
 
+#Add kubeconfigs to $KUBECONFIG
+for f in `ls ~/.kube/ | grep config.\*.yaml`
+do
+    export KUBECONFIG="$HOME/.kube/$f:$KUBECONFIG";
+done
 
 screenfetch
