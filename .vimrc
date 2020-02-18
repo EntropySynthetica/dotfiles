@@ -72,3 +72,6 @@ call pathogen#helptags()
 set noruler
 set noshowmode
 set hidden
+
+"My Shortcuts
+set pastetoggle=<F3>
