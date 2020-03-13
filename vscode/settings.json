@@ -1,0 +1,25 @@
+{
+	//Terminal
+	"terminal.integrated.fontFamily": "Menlo for Powerline",
+
+	
+	//Intergrate Top Menu into VSCode instead of from the OS
+	"window.titleBarStyle": "custom",
+    
+    
+	"explorer.confirmDelete": false,
+
+	//Editor Customization
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.renderWhitespace": "boundary",
+	"editor.copyWithSyntaxHighlighting": false,
+	"editor.tokenColorCustomizations": {
+		"comments": "#917844",
+	},
+
+	//VSCode Theme
+	"workbench.colorTheme": "Fresh Material",
+	"workbench.statusBar.feedback.visible": false,
+	"window.zoomLevel": 0
+ 
+}
