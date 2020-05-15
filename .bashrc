@@ -116,17 +116,22 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#Enable Powerline
+# Enable Powerline
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
 	    source /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
-#My Aliases 
-#Weather and Moon
+# Exports for Go
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+# My Aliases 
+# Weather and Moon
 alias weather='curl -4 http://wttr.in/Fargo'
 alias moon='curl -4 http://wttr.in/Moon'
 
-#Add kubeconfigs to $KUBECONFIG
+# Add kubeconfigs to $KUBECONFIG
 for f in `ls ~/.kube/ | grep config.\*.yaml`
 do
     export KUBECONFIG="$HOME/.kube/$f:$KUBECONFIG";
