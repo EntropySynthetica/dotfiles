@@ -20,6 +20,7 @@
 	//VSCode Theme
 	"workbench.colorTheme": "Fresh Material",
 	"workbench.statusBar.feedback.visible": false,
-	"window.zoomLevel": 0
+	"window.zoomLevel": 1,
+	"terminal.integrated.scrollback": 5000
  
 }
