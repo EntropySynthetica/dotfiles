@@ -37,5 +37,9 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 mv ~/.gitconfig ~/.gitconfig.old
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 
+# Setup Powerline
+mv ~/.config/powerline ~/.config/powerline_bak
+ln -s ~/dotfiles/powerline ~/.config/powerline
+
 # Make Directory for kubectl configs
 mkdir -p ~/.kube

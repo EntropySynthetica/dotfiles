@@ -118,7 +118,10 @@ fi
 
 # Enable Powerline
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
-	    source /usr/share/powerline/bindings/bash/powerline.sh
+  powerline-daemon -q
+  POWERLINE_BASH_CONTINUATION=1
+  POWERLINE_BASH_SELECT=1
+	source /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
 # Exports for Go
