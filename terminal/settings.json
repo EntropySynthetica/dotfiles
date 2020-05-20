@@ -2,6 +2,10 @@
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 
+// Font can be Downloaded from: https://github.com/microsoft/cascadia-code/releases
+
+// Guide for Powerline on Powershell https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup
+
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
@@ -14,7 +18,7 @@
             "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
             "name": "Windows PowerShell",
             "commandline": "powershell.exe",
-			"fontFace": "Menlo for Powerline",
+			"fontFace": "Cascadia Mono PL",
 			"fontSize": 12,
 			"background": "#10001f",
 			"padding": "0, 0, 0, 0",
@@ -29,7 +33,7 @@
             "name": "cmd",
             "commandline": "cmd.exe",
 			"fontSize": 12,
-			"fontFace": "Menlo for Powerline",
+			"fontFace": "Cascadia Mono PL",
 			"closeOnExit": true,
 			"background": "#10001f",
 			"padding": "0, 0, 0, 0",
@@ -44,15 +48,16 @@
             "hidden": false,
             "name": "Linux",
             "source": "Windows.Terminal.Wsl",
-			"fontFace": "Menlo for Powerline",
+			"fontFace": "Cascadia Mono PL",
 			"fontSize": 12,
 			"closeOnExit": true,
 			"historySize": 9001,
 			"background": "#10001f",
 			"padding": "0, 0, 0, 0",
 			"useAcrylic" : true,
-			"acrylicOpacity": 0.8,
-			"backgroundImageOpacity" : 0.2
+			"acrylicOpacity": 0.7,
+            "backgroundImageOpacity" : 0.7,
+            "cursorShape": "filledBox"
         },
         {
             "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
