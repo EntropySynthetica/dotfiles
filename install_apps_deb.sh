@@ -37,3 +37,5 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 mv ~/.gitconfig ~/.gitconfig.old
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 
+# Make Directory for kubectl configs
+mkdir -p ~/.kube
