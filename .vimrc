@@ -1,27 +1,31 @@
-"Install plugin manager with:
-"mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-"curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+" Install plugin manager with:
+" mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+" curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-"Install Airline
-"git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+" Install Airline
+" git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 
-"Install Airline Theme
-"git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
+" Install Airline Theme
+" git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
 
-"Install Powerline Fonts
-"git clone git@github.com:powerline/fonts.git
-"cd fontd
-"./install.sh
+" Install Powerline Fonts
+" git clone git@github.com:powerline/fonts.git
+" cd fontd
+" ./install.sh
 
 "Automatic Reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
 "
 "" Color scheme
-" mkdir -p ~/.vim/colors && cd ~/.vim/colors
-" wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
-set t_Co=256
-color wombat256mod
+" https://github.com/sainnhe/sonokai
+set termguicolors
 
+" the configuration options should be placed before `colorscheme sonokai`
+let g:sonokai_style = 'andromeda'
+let g:sonokai_enable_italic = 1
+let g:sonokai_disable_italic_comment = 1
+
+colorscheme sonokai
 
 " Enable syntax highlighting
 " " You need to reload this file for the change to apply
@@ -54,7 +58,7 @@ highlight ColorColumn ctermbg=233
 
 "" Activate airline Uncomment the following
 "let g:airline_theme = 'powerlineish'
-let g:airline_theme = 'deus'
+let g:airline_theme = 'sonokai'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 0 
 let g:airline#extensions#branch#enabled = 1 
