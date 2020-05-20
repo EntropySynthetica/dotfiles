@@ -128,7 +128,7 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 # My Aliases 
 # Weather and Moon
-alias weather='curl -4 http://wttr.in/Fargo'
+alias weather='wego'
 alias moon='curl -4 http://wttr.in/Moon'
 
 # Add kubeconfigs to $KUBECONFIG
