@@ -12,3 +12,5 @@
 	status = auto
 	ui = auto
 
+[pull]
+	rebase = false
