@@ -141,3 +141,5 @@ do
 done
 
 screenfetch
+
+complete -C /usr/local/bin/vault vault
