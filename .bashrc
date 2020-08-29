@@ -140,6 +140,8 @@ do
     export KUBECONFIG="$HOME/.kube/$f:$KUBECONFIG";
 done
 
+# Run Screenfetch on login
 screenfetch
 
+# Enable autocomplete for Vault
 complete -C /usr/local/bin/vault vault
