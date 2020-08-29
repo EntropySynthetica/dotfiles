@@ -1,6 +1,6 @@
 {
 	//Terminal
-	"terminal.integrated.fontFamily": "Menlo for Powerline",
+	"terminal.integrated.fontFamily": "Hack",
 
 	
 	//Intergrate Top Menu into VSCode instead of from the OS
@@ -11,6 +11,8 @@
 
 	//Editor Customization
 	"editor.cursorSmoothCaretAnimation": true,
+	"editor.cursorBlinking": "smooth",
+	"editor.cursorStyle": "block",
 	"editor.renderWhitespace": "boundary",
 	"editor.copyWithSyntaxHighlighting": false,
 	"editor.tokenColorCustomizations": {
@@ -18,9 +20,10 @@
 	},
 
 	//VSCode Theme
-	"workbench.colorTheme": "Fresh Material",
-	"workbench.statusBar.feedback.visible": false,
+	"workbench.colorTheme": "A Touch of Lilac Theme",
+	"workbench.editor.highlightModifiedTabs": true,
 	"window.zoomLevel": 1,
-	"terminal.integrated.scrollback": 5000
+	"terminal.integrated.scrollback": 5000,
+	"editor.formatOnPaste": true
  
 }
