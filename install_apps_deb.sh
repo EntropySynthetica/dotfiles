@@ -18,12 +18,12 @@ git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 # Install Airline Themes for VIM
 mkdir -p ~/.vim/autoload/airline/themes
 git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
-curl -LSso ~/.vim/autoload/airline/themes/sonokai.vim https://raw.githubusercontent.com/sainnhe/sonokai/master/autoload/airline/themes/sonokai.vim
+curl -LSso ~/.vim/autoload/airline/themes/sonokai.vim https://raw.githubusercontent.com/sainnhe/sonokai/v0.1.1/autoload/airline/themes/sonokai.vim
 
 # Install Color Schemes
 mkdir -p ~/.vim/colors
 curl -LSso ~/.vim/colors/wombat256grf.vim https://raw.githubusercontent.com/gryf/wombat256grf/master/colors/wombat256grf.vim
-curl -LSso ~/.vim/colors/sonokai.vim https://raw.githubusercontent.com/sainnhe/sonokai/master/colors/sonokai.vim
+curl -LSso ~/.vim/colors/sonokai.vim https://raw.githubusercontent.com/sainnhe/sonokai/v0.1.1/colors/sonokai.vim
 
 mv ~/.bashrc ~/.bashrc.old
 ln -s ~/dotfiles/.bashrc ~/.bashrc
