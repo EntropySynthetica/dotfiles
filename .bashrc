@@ -145,3 +145,6 @@ screenfetch
 
 # Enable autocomplete for Vault
 complete -C /usr/local/bin/vault vault
+
+# Enable Krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
