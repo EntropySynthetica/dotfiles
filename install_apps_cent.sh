@@ -4,7 +4,10 @@
 
 cd ~
 
-sudo yum install git vim tmux neofetch python3 -y
+sudo yum install git vim tmux neofetch python3 python3-pip -y
+
+### Install Powerline ###
+pip3 install --user powerline-status
 
 ### Setup steps for VIM ###
 # Install VIM plugin manager
@@ -37,8 +40,8 @@ mv ~/.gitconfig ~/.gitconfig.old
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 
 ## Setup Powerline
-#mv ~/.config/powerline ~/.config/powerline_bak
-#ln -s ~/dotfiles/powerline ~/.config/powerline
+mv ~/.config/powerline ~/.config/powerline_bak
+ln -s ~/dotfiles/powerline ~/.config/powerline
 
 # Make Directory for kubectl configs
 mkdir -p ~/.kube
