@@ -1,13 +1,9 @@
 {
 	//Terminal
 	"terminal.integrated.fontFamily": "Hack",
-
 	
 	//Intergrate Top Menu into VSCode instead of from the OS
 	"window.titleBarStyle": "custom",
-    
-    
-	"explorer.confirmDelete": false,
 
 	//Editor Customization
 	"editor.cursorSmoothCaretAnimation": true,
@@ -19,11 +15,69 @@
 		"comments": "#917844",
 	},
 
-	//VSCode Theme
+	//VSCode Theme and my customizations to it. 
 	"workbench.colorTheme": "A Touch of Lilac Theme",
 	"workbench.editor.highlightModifiedTabs": true,
-	"window.zoomLevel": 1,
+	"workbench.colorCustomizations": {
+		"[A Touch of Lilac Theme]": {
+			"activityBar.foreground": "#e1e1e2",
+			"activityBar.activeBackground": "#2e1b46",
+			"activityBar.background": "#3a2257",
+			"activityBarBadge.background": "#299738",
+			"activityBarBadge.foreground": "#F8F8F2",
+
+			"editorWhitespace.foreground": "#68484c",
+			"editorIndentGuide.background": "#514a6d",
+			"editorIndentGuide.activeBackground": "#6e6496",
+
+			"selection.background": "#c6c4cc",
+
+			"sideBarSectionHeader.background": "#2d1a46",
+			"sideBarSectionHeader.foreground": "#e1e1e2",
+
+			"panelTitle.activeBorder": "#299738",
+
+			"tab.inactiveBackground": "#2d1a46",
+			"tab.inactiveForeground": "#e1e1e2",
+			"tab.border": "#342e3d",
+
+			"editorGroupHeader.noTabsBackground": "#442f5f",
+			"editorGroup.border": "#464258",
+			"editorGroupHeader.tabsBackground": "#442f5f",
+
+			"list.activeSelectionBackground": "#3e3953",
+			"list.activeSelectionForeground": "#e1e1e2",
+			"list.inactiveSelectionBackground": "#3e3953",
+			"list.inactiveSelectionForeground": "#e1e1e2",
+
+			"statusBar.background": "#4b4466",
+			"statusBar.foreground": "#e1e1e2",
+			"statusBar.debuggingBackground": "#F97777",
+			"statusBar.debuggingForeground": "#e1e1e2",
+			"statusBar.noFolderBackground": "#4b4466",
+			"statusBar.noFolderForeground": "#e1e1e2",
+
+			"dropdown.background": "#1e1c25",
+			"dropdown.foreground": "#e1e1e2",
+
+			"badge.background": "#3193e3",
+			"badge.foreground": "#F8F8F2",
+
+			"titleBar.activeBackground": "#3a2257",
+			"titleBar.activeForeground": "#e1e1e2",
+			"titleBar.inactiveBackground": "#3a2257",
+			"titleBar.inactiveForeground": "#e1e1e2"
+		}
+	},
+
+	// Misc Settings
+	"remote.SSH.remotePlatform": {
+		"172.18.25.6": "linux"
+	},
+	"window.zoomLevel": 0,
 	"terminal.integrated.scrollback": 5000,
-	"editor.formatOnPaste": true
- 
+	"editor.formatOnPaste": true,
+	"redhat.telemetry.enabled": false,
+	"explorer.confirmDelete": false,
+	"terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)"
 }
