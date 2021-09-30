@@ -148,3 +148,6 @@ complete -C /usr/local/bin/vault vault
 
 # Enable Krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# Path for NPM
+export PATH="$PATH:$HOME/.npm/bin"
