@@ -4,12 +4,13 @@
 			{
 				"function": "powerline.segments.common.time.date",
 				"priority": 10,
-				"args": { "format": "[%I:%M %p]" }
+				"args": { "format": "[%I:%M %p]" },
+				"after": "🎃"
 			},
 			{
 				"function": "powerline.segments.common.net.hostname",
 				"priority": 10,
-				"before": "🎃 "
+				"before": ""
 			},
 			{
 				"function": "powerline.segments.common.env.user",
