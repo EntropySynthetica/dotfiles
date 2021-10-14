@@ -18,7 +18,7 @@
 		"exit_success": { "fg": "white", "bg": "darkestgreen" },
 		"environment": { "fg": "white", "bg": "darkestgreen" },
 		"mode": { "fg": "darkestgreen", "bg": "brightgreen", "attr": ["bold"] },
-		"date": { "fg": "white", "bg": "black", "attr": ["bold"] }
+		"date": { "fg": "white", "bg": "gray0", "attr": ["bold"] }
 	},
 	"mode_translations": {
 		"vicmd": {
