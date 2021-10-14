@@ -4,7 +4,7 @@
 			{
 				"function": "powerline.segments.common.time.date",
 				"priority": 10,
-				"args": { "format": "%H:%M" }
+				"args": { "format": "[%I:%M %p]" }
 			},
 			{
 				"function": "powerline.segments.common.net.hostname",
