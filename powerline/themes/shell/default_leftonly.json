@@ -9,7 +9,7 @@
 			{
 				"function": "powerline.segments.common.net.hostname",
 				"priority": 10,
-				"before": "🖥️  "
+				"before": "🎃 "
 			},
 			{
 				"function": "powerline.segments.common.env.user",
