@@ -2,6 +2,11 @@
 	"segments": {
 		"left": [
 			{
+				"function": "powerline.segments.common.time.date",
+				"priority": 10,
+				"args": { "format": "%H:%M" }
+			},
+			{
 				"function": "powerline.segments.common.net.hostname",
 				"priority": 10
 			},
@@ -16,7 +21,7 @@
 			{
 				"function": "powerline.segments.common.vcs.branch",
 				"priority": 40,
-        "args": { "status_colors": true }
+        		"args": { "status_colors": true }
 			},
 			{
 				"function": "powerline.segments.shell.cwd",
