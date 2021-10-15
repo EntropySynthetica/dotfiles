@@ -116,13 +116,16 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Enable Powerline
-if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
-  powerline-daemon -q
-  POWERLINE_BASH_CONTINUATION=1
-  POWERLINE_BASH_SELECT=1
-	source /usr/share/powerline/bindings/bash/powerline.sh
-fi
+## Enable Powerline
+#if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+#  powerline-daemon -q
+#  POWERLINE_BASH_CONTINUATION=1
+#  POWERLINE_BASH_SELECT=1
+#	source /usr/share/powerline/bindings/bash/powerline.sh
+#fi
+
+# Enable OhMyPosh
+eval "$(oh-my-posh --init --shell bash --config ~/.config/poshthemes/jandedobbeleer.omp.json)"
 
 # Exports for Go
 export GOROOT=/usr/local/go
