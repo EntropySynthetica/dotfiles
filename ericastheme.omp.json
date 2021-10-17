@@ -8,7 +8,7 @@
           "type": "session",
           "style": "diamond",
           "foreground": "#193549",
-          "background": "#9250cc",
+          "background": "#9700FF",
           "leading_diamond": "",
           "properties": {
             "postfix": " ",
@@ -21,7 +21,7 @@
           "type": "session",
           "style": "diamond",
           "foreground": "#193549",
-          "background": "#9250cc",
+          "background": "#9700FF",
           "trailing_diamond": "",
           "properties": {
             "postfix": " ",
@@ -36,12 +36,12 @@
           "style": "powerline",
           "powerline_symbol": "",
           "foreground": "#193549",
-          "background": "#24d15b",
+          "background": "#00ff44",
           "properties": {
             "display_stash_count": true,
             "display_upstream_icon": true,
             "status_colors_enabled": true,
-            "local_changes_color": "#ff9248",
+            "local_changes_color": "#FF7400",
             "ahead_and_behind_color": "#f26d50",
             "behind_color": "#f17c37",
             "ahead_color": "#89d1dc",
