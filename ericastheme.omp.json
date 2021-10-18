@@ -93,55 +93,33 @@
       "type": "rprompt",
       "segments": [
         {
-          "type": "shell",
-          "style": "plain",
-          "foreground": "#ffffff",
-          "background": "#0077c2",
+          "type": "python",
+          "style": "diamond",
+          "foreground": "#000000",
+          "background": "#D4E157",
+          "leading_diamond": "\uE0B6",
           "properties": {
-            "prefix": "<#0077c2,transparent>\uE0B6</>  ",
-            "postfix": " <transparent,#0077c2>\uE0B2</>"
+            "postfix": " <#000000>\uE0B6</>"
           }
         },
         {
-          "type": "ytm",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B2",
-          "invert_powerline": true,
-          "foreground": "#111111",
-          "background": "#1BD760",
-          "properties": {
-            "prefix": " \uF167 ",
-            "paused_icon": " ",
-            "playing_icon": " "
-          }
-        },
-        {
-          "type": "battery",
-          "style": "powerline",
-          "invert_powerline": true,
-          "powerline_symbol": "\uE0B2",
+          "type": "go",
+          "style": "diamond",
           "foreground": "#ffffff",
-          "background": "#f36943",
+          "background": "#7FD5EA",
+          "leading_diamond": "\uE0B6",
+          "display_version": true,
           "properties": {
-            "battery_icon": "",
-            "discharging_icon": " ",
-            "charging_icon": " ",
-            "charged_icon": " ",
-            "color_background": true,
-            "charged_color": "#4caf50",
-            "charging_color": "#40c4ff",
-            "discharging_color": "#ff5722",
-            "postfix": " "
+            "postfix": " <#000000>\uE0B6</>"
           }
         },
         {
           "type": "time",
           "style": "diamond",
-          "invert_powerline": true,
-          "leading_diamond": "\uE0B2",
-          "trailing_diamond": "\uE0B4",
-          "background": "#2e9599",
           "foreground": "#111111",
+          "background": "#2e9599",
+          "leading_diamond": "\uE0B6",
+          "trailing_diamond": "\uE0B4",
           "properties": {
             "time_format": "3:04:05 PM"
           }
