@@ -8,7 +8,7 @@
           "type": "session",
           "style": "diamond",
           "foreground": "#193549",
-          "background": "#9700FF",
+          "background": "#C76CCC",
           "leading_diamond": "",
           "properties": {
             "postfix": " ",
@@ -21,7 +21,7 @@
           "type": "session",
           "style": "diamond",
           "foreground": "#193549",
-          "background": "#9700FF",
+          "background": "#C76CCC",
           "trailing_diamond": "",
           "properties": {
             "postfix": " ",
@@ -36,15 +36,15 @@
           "style": "powerline",
           "powerline_symbol": "",
           "foreground": "#193549",
-          "background": "#03AD00",
+          "background": "#89d1dc",
           "properties": {
             "display_stash_count": true,
             "display_upstream_icon": true,
             "status_colors_enabled": true,
-            "local_changes_color": "#E36B00",
+            "local_changes_color": "#E6B862",
             "ahead_and_behind_color": "#f26d50",
-            "behind_color": "#f17c37",
-            "ahead_color": "#89d1dc",
+            "behind_color": "#E6B862",
+            "ahead_color": "#95FFB2",
             "stash_count_icon": "\uF692 "
           }
         },
@@ -65,7 +65,7 @@
           "foreground": "#193549",
           "background": "#868585",
           "properties": {
-            "prefix": "   ",
+            "prefix": "  ",
             "home_icon": "~",
             "folder_separator_icon": " \uE0b1 ",
             "style": "mixed",
@@ -75,7 +75,7 @@
         {
           "type": "exit",
           "style": "diamond",
-          "foreground": "#ffffff",
+          "foreground": "#193549",
           "background": "#2e9599",
           "leading_diamond": "",
           "trailing_diamond": "",
@@ -84,13 +84,14 @@
             "always_enabled": false,
             "error_color": "#f1184c",
             "color_background": true,
-            "prefix": "<#83769c></> "
+            "prefix": " "
           }
         }
       ]
     },
     {
-      "type": "rprompt",
+      "type": "prompt",
+      "alignment": "right",
       "segments": [
         {
           "type": "python",
@@ -125,7 +126,25 @@
           }
         }
       ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#C76CCC",
+          "properties": {
+            "prefix": " ",
+            "postfix": "",
+            "text": "\ue285\ue285"
+          }
+        }
+      ]
     }
+
   ],
   "final_space": true,
   "console_title": true,
