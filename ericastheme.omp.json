@@ -9,7 +9,7 @@
           "style": "diamond",
           "foreground": "#193549",
           "background": "#C76CCC",
-          "leading_diamond": "",
+          "leading_diamond": "\uE0B6",
           "properties": {
             "postfix": " ",
             "prefix": "🎃 ",
@@ -22,7 +22,7 @@
           "style": "diamond",
           "foreground": "#193549",
           "background": "#C76CCC",
-          "trailing_diamond": "",
+          "trailing_diamond": "\uE0B4",
           "properties": {
             "postfix": " ",
             "prefix": "✨ ",
@@ -34,7 +34,7 @@
         {
           "type": "git",
           "style": "powerline",
-          "powerline_symbol": "",
+          "powerline_symbol": "\uE0B4",
           "foreground": "#193549",
           "background": "#89d1dc",
           "properties": {
@@ -51,7 +51,7 @@
         {
           "type": "root",
           "style": "powerline",
-          "powerline_symbol": "",
+          "powerline_symbol": "\uE0B4",
           "foreground": "#111111",
           "background": "#ffff66",
           "properties": {
@@ -61,7 +61,7 @@
         {
           "type": "path",
           "style": "powerline",
-          "powerline_symbol": "",
+          "powerline_symbol": "\uE0B4",
           "foreground": "#193549",
           "background": "#868585",
           "properties": {
@@ -78,7 +78,7 @@
           "foreground": "#193549",
           "background": "#2e9599",
           "leading_diamond": "",
-          "trailing_diamond": "",
+          "trailing_diamond": "\uE0B4",
           "properties": {
             "display_exit_code": false,
             "always_enabled": false,
