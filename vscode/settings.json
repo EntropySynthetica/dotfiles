@@ -1,16 +1,19 @@
 {
 	//Terminal
-	"terminal.integrated.fontFamily": "Hack",
+	"terminal.integrated.fontFamily": "CaskaydiaCove NF",
+	"terminal.integrated.fontSize": 15,
 	
 	//Intergrate Top Menu into VSCode instead of from the OS
 	"window.titleBarStyle": "custom",
 
 	//Editor Customization
+	"editor.fontFamily": "SpaceMono NF, 'Courier New', monospace",
 	"editor.cursorSmoothCaretAnimation": true,
 	"editor.cursorBlinking": "smooth",
 	"editor.cursorStyle": "block",
 	"editor.renderWhitespace": "boundary",
 	"editor.copyWithSyntaxHighlighting": false,
+	"editor.bracketPairColorization.enabled": true,
 	"editor.tokenColorCustomizations": {
 		"comments": "#917844",
 	},
@@ -26,8 +29,8 @@
 			"activityBarBadge.background": "#299738",
 			"activityBarBadge.foreground": "#F8F8F2",
 
-			"editorWhitespace.foreground": "#68484c",
-			"editorIndentGuide.background": "#514a6d",
+			"editorWhitespace.foreground": "#50373a",
+			"editorIndentGuide.background": "#39334e",
 			"editorIndentGuide.activeBackground": "#6e6496",
 
 			"selection.background": "#c6c4cc",
@@ -79,5 +82,5 @@
 	"editor.formatOnPaste": true,
 	"redhat.telemetry.enabled": false,
 	"explorer.confirmDelete": false,
-	"terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)"
+	"terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
 }
