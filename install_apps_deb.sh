@@ -37,9 +37,13 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 mv ~/.gitconfig ~/.gitconfig.old
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 
-# Setup Powerline
-mv ~/.config/powerline ~/.config/powerline_bak
-ln -s ~/dotfiles/powerline ~/.config/powerline
+# Install OMP
+./install_ohmyposh.sh
 
 # Make Directory for kubectl configs
 mkdir -p ~/.kube
+
+# Install lsd
+cd /tmp
+curl -OL https://github.com/Peltoche/lsd/releases/download/0.23.1/lsd_0.23.1_amd64.deb
+sudo dpkg -i lsd_0.23.1_amd64.deb
