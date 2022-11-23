@@ -137,6 +137,9 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 alias weather='wego'
 alias moon='curl -4 http://wttr.in/Moon'
 
+# Map LSD to LS
+alias ls='lsd'
+
 # Add kubeconfigs to $KUBECONFIG
 for f in `ls ~/.kube/ | grep config.\*.yaml`
 do
