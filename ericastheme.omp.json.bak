@@ -1,0 +1,155 @@
+{
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "diamond",
+          "foreground": "#193549",
+          "background": "#C76CCC",
+          "leading_diamond": "\uE0B6",
+          "properties": {
+            "postfix": " ",
+            "prefix": "🌙 ",
+            "display_host": true,
+            "display_user": false
+          }
+        },
+        {
+          "type": "session",
+          "style": "diamond",
+          "foreground": "#193549",
+          "background": "#C76CCC",
+          "trailing_diamond": "\uE0B4",
+          "properties": {
+            "postfix": " ",
+            "prefix": "✨ ",
+            "ssh_icon": "",
+            "display_host": false,
+            "display_user": true
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B4",
+          "foreground": "#193549",
+          "background": "#89d1dc",
+          "properties": {
+            "display_stash_count": true,
+            "display_upstream_icon": true,
+            "status_colors_enabled": true,
+            "local_changes_color": "#E6B862",
+            "ahead_and_behind_color": "#f26d50",
+            "behind_color": "#E6B862",
+            "ahead_color": "#95FFB2",
+            "stash_count_icon": "\uF692 "
+          }
+        },
+        {
+          "type": "root",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B4",
+          "foreground": "#111111",
+          "background": "#ffff66",
+          "properties": {
+            "root_icon": ""
+          }
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B4",
+          "foreground": "#193549",
+          "background": "#868585",
+          "properties": {
+            "prefix": "  ",
+            "home_icon": "~",
+            "folder_separator_icon": " \uE0b1 ",
+            "style": "mixed",
+            "max_depth": "3"
+          }
+        },
+        {
+          "type": "exit",
+          "style": "diamond",
+          "foreground": "#193549",
+          "background": "#2e9599",
+          "leading_diamond": "",
+          "trailing_diamond": "\uE0B4",
+          "properties": {
+            "display_exit_code": false,
+            "always_enabled": false,
+            "error_color": "#f1184c",
+            "color_background": true,
+            "prefix": " "
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "python",
+          "style": "diamond",
+          "foreground": "#193549",
+          "background": "#D4E157",
+          "leading_diamond": "\uE0B6",
+          "properties": {
+            "postfix": " <#000000>\uE0B6</>",
+            "prefix": "\uf820 "
+          }
+        },
+        {
+          "type": "go",
+          "style": "diamond",
+          "foreground": "#193549",
+          "background": "#7FD5EA",
+          "leading_diamond": "\uE0B6",
+          "display_version": true,
+          "properties": {
+            "postfix": " <#000000>\uE0B6</>",
+            "prefix": "Go "
+          }
+        },
+        {
+          "type": "time",
+          "style": "diamond",
+          "foreground": "#111111",
+          "background": "#2e9599",
+          "leading_diamond": "\uE0B6",
+          "trailing_diamond": "\uE0B4",
+          "properties": {
+            "time_format": "3:04:05 PM"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#C76CCC",
+          "properties": {
+            "prefix": " ",
+            "postfix": "",
+            "text": "\ue285\ue285"
+          }
+        }
+      ]
+    }
+
+  ],
+  "final_space": true,
+  "console_title": true,
+  "console_title_style": "template",
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}"
+}

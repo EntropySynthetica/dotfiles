@@ -1,4 +1,8 @@
 {
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "final_space": true,
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "blocks": [
     {
       "type": "prompt",
@@ -9,10 +13,9 @@
           "style": "diamond",
           "foreground": "#193549",
           "background": "#C76CCC",
-          "leading_diamond": "\uE0B6",
+          "leading_diamond": "\ue0b6",
+          "template": "🌙 {{ if .SSHSession }}\uf817 {{ end }}{{ .HostName }} ",
           "properties": {
-            "postfix": " ",
-            "prefix": "🌙 ",
             "display_host": true,
             "display_user": false
           }
@@ -22,11 +25,9 @@
           "style": "diamond",
           "foreground": "#193549",
           "background": "#C76CCC",
-          "trailing_diamond": "\uE0B4",
+          "trailing_diamond": "\ue0b4",
+          "template": "\u2728 {{ if .SSHSession }}{{ end }}{{ .UserName }} ",
           "properties": {
-            "postfix": " ",
-            "prefix": "✨ ",
-            "ssh_icon": "",
             "display_host": false,
             "display_user": true
           }
@@ -34,42 +35,44 @@
         {
           "type": "git",
           "style": "powerline",
-          "powerline_symbol": "\uE0B4",
+          "powerline_symbol": "\ue0b4",
           "foreground": "#193549",
           "background": "#89d1dc",
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#E6B862{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f26d50{{ end }}",
+            "{{ if gt .Ahead 0 }}#E6B862{{ end }}",
+            "{{ if gt .Behind 0 }}#95FFB2{{ end }}"
+          ],
+          "template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}}\uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} ",
           "properties": {
-            "display_stash_count": true,
-            "display_upstream_icon": true,
-            "status_colors_enabled": true,
-            "local_changes_color": "#E6B862",
-            "ahead_and_behind_color": "#f26d50",
-            "behind_color": "#E6B862",
-            "ahead_color": "#95FFB2",
-            "stash_count_icon": "\uF692 "
+            "fetch_stash_count": true,
+            "fetch_upstream_icon": true
           }
         },
         {
           "type": "root",
           "style": "powerline",
-          "powerline_symbol": "\uE0B4",
+          "powerline_symbol": "\ue0b4",
           "foreground": "#111111",
           "background": "#ffff66",
+          "template": " \uf0e7 ",
           "properties": {
-            "root_icon": ""
+            "root_icon": "\uf0ad"
           }
         },
         {
           "type": "path",
           "style": "powerline",
-          "powerline_symbol": "\uE0B4",
+          "powerline_symbol": "\ue0b4",
           "foreground": "#193549",
           "background": "#868585",
+          "template": " \uf07c {{ .Path }} ",
           "properties": {
-            "prefix": "  ",
+            "folder_separator_icon": " \ue0b1 ",
             "home_icon": "~",
-            "folder_separator_icon": " \uE0b1 ",
-            "style": "mixed",
-            "max_depth": "3"
+            "max_depth": "3",
+            "style": "mixed"
           }
         },
         {
@@ -77,14 +80,13 @@
           "style": "diamond",
           "foreground": "#193549",
           "background": "#2e9599",
-          "leading_diamond": "",
-          "trailing_diamond": "\uE0B4",
+          "background_templates": [
+            "{{ if gt .Code 0 }}#f1184c{{ end }}"
+          ],
+          "trailing_diamond": "\ue0b4",
+          "template": " \uf00d{{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} ",
           "properties": {
-            "display_exit_code": false,
-            "always_enabled": false,
-            "error_color": "#f1184c",
-            "color_background": true,
-            "prefix": " "
+            "always_enabled": false
           }
         }
       ]
@@ -98,31 +100,25 @@
           "style": "diamond",
           "foreground": "#193549",
           "background": "#D4E157",
-          "leading_diamond": "\uE0B6",
-          "properties": {
-            "postfix": " <#000000>\uE0B6</>",
-            "prefix": "\uf820 "
-          }
+          "leading_diamond": "\ue0b6",
+          "template": "\uf820 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} <#000000>\ue0b6</>"
         },
         {
           "type": "go",
           "style": "diamond",
           "foreground": "#193549",
           "background": "#7FD5EA",
-          "leading_diamond": "\uE0B6",
-          "display_version": true,
-          "properties": {
-            "postfix": " <#000000>\uE0B6</>",
-            "prefix": "Go "
-          }
+          "leading_diamond": "\ue0b6",
+          "template": "Go {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} <#000000>\ue0b6</>"
         },
         {
           "type": "time",
           "style": "diamond",
           "foreground": "#111111",
           "background": "#2e9599",
-          "leading_diamond": "\uE0B6",
-          "trailing_diamond": "\uE0B4",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b4",
+          "template": " {{ .CurrentDate | date .Format }} ",
           "properties": {
             "time_format": "3:04:05 PM"
           }
@@ -132,24 +128,15 @@
     {
       "type": "prompt",
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
           "type": "text",
           "style": "plain",
           "foreground": "#C76CCC",
-          "properties": {
-            "prefix": " ",
-            "postfix": "",
-            "text": "\ue285\ue285"
-          }
+          "template": " \ue285\ue285"
         }
-      ]
+      ],
+      "newline": true
     }
-
-  ],
-  "final_space": true,
-  "console_title": true,
-  "console_title_style": "template",
-  "console_title_template": "{{ .Shell }} in {{ .Folder }}"
+  ]
 }

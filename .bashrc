@@ -125,7 +125,7 @@ fi
 #fi
 
 # Enable OhMyPosh
-eval "$(oh-my-posh --init --shell bash --config ~/dotfiles/ericastheme.omp.json)"
+eval "$(oh-my-posh init bash --config ~/dotfiles/ericastheme.omp.json)"
 
 # Exports for Go
 export GOROOT=/usr/local/go
